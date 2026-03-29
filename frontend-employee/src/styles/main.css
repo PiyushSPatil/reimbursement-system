@@ -1,0 +1,160 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a; /* dark blue instead of pure black */
+  color: #e2e8f0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 30px;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar a {
+  color: #a78bfa;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Card */
+.card {
+  background: #020617;
+  padding: 30px;
+  border-radius: 14px;
+  width: 420px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 0 30px rgba(167, 139, 250, 0.15);
+}
+
+/* Title */
+.card h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #fff;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #a78bfa;
+}
+
+/* File */
+.file {
+  margin-bottom: 15px;
+  color: #cbd5f5;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* Navbar Professional */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 30px;
+
+  background: rgba(2, 6, 23, 0.8);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid #1e293b;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Links */
+.nav-link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Active link */
+.active {
+  color: #a78bfa;
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #7c3aed;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
